@@ -9,102 +9,133 @@
   </a>
 </div>
 <%# navbar %>
-<nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom-2 border-info ">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom-2 border-info sticky-top">
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav" style="font-size: 24px;">
-      <li class="nav-item">
+      <li class="nav-item mx-4">
         <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" href="#">About</a>
+        <a class="nav-link text-light" href="#about">About</a>
+      </li>
+      <li class="nav-item mx-4">
+        <a class="nav-link text-light" href="#portfolio">Portfolios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" href="#">Portfolios</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Contact</a>
+        <a class="nav-link text-light" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
-<%# About %>
-<div class="text-center animate__backInLeft" style="margin-top: 50px; ">
-  <h1 > <strong>ABOUT</strong></h1>
-  <%=image_tag("lika.png", width: 300)%>
-</div>
-<div class="row justify-content-center">
-  <div class="col text-center m-4">
-    <%= image_tag("html.png", width: 150) %>
-    <h3>HTML</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("css.png", width: 150) %>
-    <h3>CSS</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("bootstrap.png", width: 150) %>
-    <h3>Bootstrap</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("java-script.png", width: 150) %>
-    <h3>Java Script</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("ruby.png", width: 150) %>
-    <h3>Ruby</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("rails.png", width: 150) %>
-    <h3>Ruby on Rails</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("flutterflow.png", width: 150) %>
-    <h3>Flutterflow</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("firebase.png", width: 150) %>
-    <h3>Firebase</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("cloudinary.png", width: 150) %>
-    <h3>Cloudinary</h3>
-  </div>
-  <div class="col text-center m-4">
-    <%= image_tag("heroku.png", width: 150) %>
-    <h3>Heroku</h3>
-  </div>
-</div>
-<%# Project %>
-<div class="text-center" style="margin-top: 100px; margin-bottom: 50px;">
-  <h1> <strong>PROJECTS</strong></h1>
-</div>
-<div class="row">
-  <div class="col text-center">
-    <%= image_tag("killninja.png", width: 300, crop: :cover)%>
-  </div>
-  <div class="col text-center">
-    <%= image_tag("simple_airbnb.png", width: 300, crop: :cover)%>
-  </div>
-  <div class="col text-center">
-    <%= image_tag("covoyage.png", width: 300, crop: :cover)%>
-  </div>
-  <div class="col text-center">
-    <%= image_tag("business_event.png", width: 300, crop: :cover)%>
-  </div>
-</div>
 
-<%# contact %>
-<div class="text-center" style="margin-top: 100px; margin-bottom: 50px;">
-  <h1> <strong>CONTACT</strong></h1>
-</div>
-<div class="row ">
-  <div class="card col">
-    <h3><strong>Chanlika SERVAIS</strong></h3>
-    <h6>Tel : 06 07 81 47 26</h6>
-    <h6>E-mail : chanlika.servais@gmail.com</h6>
-    <div class="d-flex justify-content-center align-items-center">
-      <i class="fa-brands fa-github fa-5x col"></i>
-      <i class="fa-brands fa-linkedin fa-5x col"></i>
+<%# About %>
+<section>
+  <div class="text-center animate__backInLeft" style="margin-top: 50px; " id="about">
+    <h1 > <strong>ABOUT</strong></h1>
+    <div class="line my-4"></div>
+    <%=image_tag("lika.png", width: 300)%>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col text-center m-4">
+      <%= image_tag("html.png", width: 150) %>
+      <h3>HTML</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("css.png", width: 150) %>
+      <h3>CSS</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("bootstrap.png", width: 150) %>
+      <h3>Bootstrap</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("java-script.png", width: 150) %>
+      <h3>Java Script</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("ruby.png", width: 150) %>
+      <h3>Ruby</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("rails.png", width: 150) %>
+      <h3>Ruby on Rails</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("flutterflow.png", width: 150) %>
+      <h3>Flutterflow</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("firebase.png", width: 150) %>
+      <h3>Firebase</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("cloudinary.png", width: 150) %>
+      <h3>Cloudinary</h3>
+    </div>
+    <div class="col text-center m-4">
+      <%= image_tag("heroku.png", width: 150) %>
+      <h3>Heroku</h3>
     </div>
   </div>
-</div>
+</section>
+
+<%# Project %>
+<section>
+  <div class="text-center" style="margin-top: 100px; margin-bottom: 50px;" id="portfolio">
+    <h1> <strong>PROJECTS</strong></h1>
+    <div class="line my-4"></div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <%= image_tag("killninja.png", width: 300, crop: :cover)%>
+    </div>
+    <div class="col text-center">
+      <%= image_tag("simple_airbnb.png", width: 300, crop: :cover)%>
+    </div>
+    <div class="col text-center">
+      <%= image_tag("covoyage.png", width: 300, crop: :cover)%>
+    </div>
+    <div class="col text-center">
+      <%= image_tag("business_event.png", width: 300, crop: :cover)%>
+    </div>
+  </div>
+</section>
+
+<%# contact %>
+<section>
+  <div class="text-center" style="margin-top: 100px; margin-bottom: 50px;" id="contact">
+    <h1> <strong>CONTACT</strong></h1>
+    <div class="line my-4"></div>
+    <h5 class="my-2 text-primary"> Want to work together ?</h5>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col text-center m-4 border border-info p-4 rounded rounded-4 bg-light d-flex flex-column align-items-center justify-content-center">
+      <h3><strong>Chanlika SERVAIS</strong></h3>
+      <h6>Tel : 06 07 81 47 26</h6>
+      <h6>E-mail : chanlika.servais@gmail.com</h6>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="https://github.com/LikaSrv" target="_blank">
+          <i class="fa-brands fa-github fa-4x m-2"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/chanlika-servais-b6418210b/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-4x m-2"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col text-center m-4 border border-info p-4 rounded rounded-4 bg-light">
+      <form action="" class="d-flex flex-column ">
+        <input class="form-control m-2 bg-input" type="text" name="name" placeholder="Name">
+        <input class="form-control m-2 bg-input" type="text" name="email" placeholder="E-mail">
+        <textarea class="form-control m-2 bg-input" name="message" placeholder="Message" rows="5"></textarea>
+        <input type="submit" value="Submit" class="btn btn-primary w-25 mx-auto my-2 rounded rounded-4">
+      </form>
+    </div>
+
+  </div>
+</section>
+
+  <%# footer %>
+  <div style="background-color: #293d5b; width: 100wh; height: 100px; margin: auto"
+        class="d-flex justify-content-center align-items-center">
+    <p class="text-white">Chanlika SERVAIS @2024</p>
+  </div>
