@@ -8,7 +8,6 @@
     </h5>
   </a>
 </div>
-
 <%# navbar %>
 <nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom-2 border-info sticky-top">
   <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,7 +27,6 @@
     </ul>
   </div>
 </nav>
-
 <%# About %>
 <section>
   <div class="text-center animate__backInLeft" style="margin-top: 50px; " id="about">
@@ -59,49 +57,58 @@
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col text-center m-4">
-      <%= image_tag("html.png", width: 150) %>
-      <h3>HTML</h3>
+    <div class="col text-center border border-info p-4 rounded rounded-4 d-flex flex-column align-items-center" style="margin: 100px;">
+      <div class="row">
+        <h4><strong>FRONT-END</strong></h4>
+        <div class="col text-center m-4">
+          <%= image_tag("html.png", width: 100) %>
+          <h3>HTML</h3>
+        </div>
+        <div class="col text-center m-4">
+          <%= image_tag("css.png", width: 100) %>
+          <h3>CSS</h3>
+        </div>
+        <div class="col text-center m-4">
+          <%= image_tag("bootstrap.png", width: 100) %>
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="col text-center m-4">
+          <%= image_tag("java-script.png", width: 100) %>
+          <h3>Java Script</h3>
+        </div>
+        <div class="col text-center m-4">
+          <%= image_tag("flutterflow.png", width: 100) %>
+          <h3>Flutterflow</h3>
+        </div>
+      </div>
     </div>
-    <div class="col text-center m-4">
-      <%= image_tag("css.png", width: 150) %>
-      <h3>CSS</h3>
-    </div>
-    <div class="col text-center m-4">
-      <%= image_tag("bootstrap.png", width: 150) %>
-      <h3>Bootstrap</h3>
-    </div>
-    <div class="col text-center m-4">
-      <%= image_tag("java-script.png", width: 150) %>
-      <h3>Java Script</h3>
-    </div>
-    <div class="col text-center m-4">
-      <%= image_tag("ruby.png", width: 150) %>
-      <h3>Ruby</h3>
-    </div>
-    <div class="col text-center m-4">
-      <%= image_tag("rails.png", width: 150) %>
-      <h3>Ruby on Rails</h3>
-    </div>
-    <div class="col text-center m-4">
-      <%= image_tag("flutterflow.png", width: 150) %>
-      <h3>Flutterflow</h3>
-    </div>
-    <div class="col text-center m-4">
-      <%= image_tag("firebase.png", width: 150) %>
-      <h3>Firebase</h3>
-    </div>
-    <div class="col text-center m-4">
-      <%= image_tag("cloudinary.png", width: 150) %>
-      <h3>Cloudinary</h3>
-    </div>
-    <div class="col text-center m-4">
-      <%= image_tag("heroku.png", width: 150) %>
-      <h3>Heroku</h3>
+    <div class="col text-center border border-info p-4 rounded rounded-4 d-flex flex-column align-items-center" style="margin: 100px;">
+      <div class="row">
+        <h4><strong>BACK-END</strong></h4>
+        <div class="col text-center m-4">
+          <%= image_tag("ruby.png", width: 100) %>
+          <h3>Ruby</h3>
+        </div>
+        <div class="col text-center m-4">
+          <%= image_tag("rails.png", width: 100) %>
+          <h3>Ruby on Rails</h3>
+        </div>
+        <div class="col text-center m-4">
+          <%= image_tag("firebase.png", width: 100) %>
+          <h3>Firebase</h3>
+        </div>
+        <div class="col text-center m-4">
+          <%= image_tag("cloudinary.png", width: 100) %>
+          <h3>Cloudinary</h3>
+        </div>
+        <div class="col text-center m-4">
+          <%= image_tag("heroku.png", width: 100) %>
+          <h3>Heroku</h3>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
 <%# Project %>
 <section>
   <div class="text-center" style="margin-top: 100px; margin-bottom: 50px;" id="portfolio">
@@ -123,7 +130,6 @@
     </div>
   </div>
 </section>
-
 <%# contact %>
 <section>
   <div class="text-center" style="margin-top: 100px; margin-bottom: 50px;" id="contact">
@@ -153,12 +159,10 @@
         <input type="submit" value="Submit" class="btn btn-primary w-25 mx-auto my-2 rounded rounded-4">
       </form>
     </div>
-
   </div>
 </section>
-
-  <%# footer %>
-  <div style="background-color: #293d5b; width: 100wh; height: 100px; margin: auto"
+<%# footer %>
+<div style="background-color: #293d5b; width: 100wh; height: 100px; margin: auto"
         class="d-flex justify-content-center align-items-center">
-    <p class="text-white">Chanlika SERVAIS @2024</p>
-  </div>
+  <p class="text-white">Chanlika SERVAIS @2024</p>
+</div>
